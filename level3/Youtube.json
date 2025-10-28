@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "_id": "U001",
+      "email": "user1@example.com",
+      "password": "hashed_password_1",
+      "username": "VideoFan01",
+      "birthDate": "1990-05-12",
+      "gender": "home",
+      "country": "Espanya",
+      "postalCode": "08001"
+    },
+    {
+      "_id": "U002",
+      "email": "user2@example.com",
+      "password": "hashed_password_2",
+      "username": "CoolViewer22",
+      "birthDate": "1995-11-03",
+      "gender": "dona",
+      "country": "Espanya",
+      "postalCode": "08002"
+    }
+  ],
+  "channels": [
+    {
+      "_id": "CH001",
+      "userId": "U001",
+      "name": "TechExplained",
+      "description": "Vídeos explicatius sobre tecnologia",
+      "createdAt": "2025-01-15T10:00:00Z"
+    }
+  ],
+  "videos": [
+    {
+      "_id": "V001",
+      "title": "Com funciona un motor elèctric",
+      "description": "Explicació detallada amb animacions",
+      "sizeMB": 120.5,
+      "filename": "motor_electric.mp4",
+      "durationSec": 540,
+      "thumbnail": "motor_thumb.jpg",
+      "views": 1023,
+      "likes": 532,
+      "dislikes": 2,
+      "status": "públic",
+      "tags": ["tecnologia", "educació", "enginyeria"],
+      "publishedBy": "U001",
+      "publishedAt": "2025-10-20T14:30:00Z"
+    }
+  ],
+  "subscriptions": [
+    {
+      "subscriberId": "U002",
+      "channelId": "CH001",
+      "subscribedAt": "2025-10-21T09:00:00Z"
+    }
+  ],
+  "videoReactions": [
+    {
+      "videoId": "V001",
+      "userId": "U002",
+      "type": "like",
+      "reactedAt": "2025-10-21T10:00:00Z"
+    }
+  ],
+  "playlists": [
+    {
+      "_id": "PL001",
+      "userId": "U002",
+      "name": "Favorits de tecnologia",
+      "createdAt": "2025-10-22T11:00:00Z",
+      "status": "privada",
+      "videos": ["V001"]
+    }
+  ],
+  "comments": [
+    {
+      "_id": "C001",
+      "videoId": "V001",
+      "userId": "U002",
+      "text": "Molt interessant! Gràcies per compartir.",
+      "commentedAt": "2025-10-22T12:00:00Z"
+    }
+  ]
+}

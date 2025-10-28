@@ -1,0 +1,73 @@
+{
+  "glasses": [
+    {
+      "_id": "G001",
+      "brand": "Rayban",
+      "leftLensGraduation": "-1.25",
+      "rightLensGraduation": "-1.00",
+      "frameType": "metàl·lica",
+      "frameColor": "blau",
+      "lensColorLeft": "transparent",
+      "lensColorRight": "transparent",
+      "price": 129.99,
+      "supplierId": "S001"
+    }
+  ],
+  "suppliers": [
+    {
+      "_id": "S001",
+      "name": "VisionLogística SL",
+      "address": {
+        "street": "Carrer de la Visió",
+        "number": "12",
+        "floor": "1",
+        "door": "A",
+        "city": "Barcelona",
+        "postalCode": "08001",
+        "country": "Espanya"
+      },
+      "phone": "+34 933 123 456",
+      "fax": "+34 933 654 321",
+      "nif": "B12345678"
+    }
+  ],
+  "clients": [
+    {
+      "_id": "C001",
+      "name": "Carlos Gómez",
+      "address": {
+        "street": "Carrer del Sol",
+        "number": "45",
+        "floor": "2",
+        "door": "B",
+        "city": "Castelldefels",
+        "postalCode": "08860",
+        "country": "Espanya"
+      },
+      "phone": "+34 600 123 456",
+      "email": "carlos.gomez@culdampolla.com",
+      "registrationDate": "2025-10-28T10:00:00Z",
+      "recommendedBy": "C002"
+    },
+    {
+      "_id": "C002",
+      "name": "Laura Martínez"
+    }
+  ],
+  "employees": [
+    {
+      "_id": "E001",
+      "name": "Marta Puig",
+      "email": "mpuig@culdampolla.com",
+      "position": "Òptica"
+    }
+  ],
+  "sales": [
+    {
+      "clientId": "C001",
+      "glassesId": "G001",
+      "employeeId": "E001",
+      "saleDate": "2025-10-28T12:30:00Z"
+    }
+  ]
+}
