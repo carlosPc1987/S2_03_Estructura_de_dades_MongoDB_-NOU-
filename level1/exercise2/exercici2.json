@@ -1,36 +1,22 @@
 {
-  "glasses": [
+  "Glasses": [
     {
       "_id": "G001",
       "brand": "Rayban",
-      "leftLensGraduation": "-1.25",
-      "rightLensGraduation": "-1.00",
       "frameType": "metàl·lica",
       "frameColor": "blau",
+      "leftLensGraduation": "-1.25",
+      "rightLensGraduation": "-1.00",
       "lensColorLeft": "transparent",
       "lensColorRight": "transparent",
-      "price": 129.99,
-      "supplier": {
-        "supplierId": "S001",
-        "name": "VisionLogística SL"
-      },
-      "soldTo": [
-        {
-          "clientId": "C001",
-          "name": "Carlos Gómez",
-          "saleDate": "2025-10-28T12:30:00Z",
-          "soldBy": {
-            "employeeId": "E001",
-            "name": "Marta Puig"
-          }
-        }
-      ]
+      "price": 105.75,
+      "supplierId": "S001"
     }
   ],
-  "suppliers": [
+  "Suppliers": [
     {
       "_id": "S001",
-      "name": "VisionLogística SL",
+      "name": "Googles Associated SL",
       "address": {
         "street": "Carrer de la Visió",
         "number": "12",
@@ -45,18 +31,51 @@
       "nif": "B12345678"
     }
   ],
-  "clients": [
+  "Clients": [
     {
       "_id": "C001",
-      "name": "Carlos Lopez",
-      "email": "carlos.gomez@culdampolla.com"
+      "name": "Client 1",
+      "email": "client1@culdampolla.com"
+    },
+    {
+      "_id": "C002",
+      "name": "Client 2",
+      "email": "client2@culdampolla.com"
+    },
+    {
+      "_id": "C003",
+      "name": "Client 3",
+      "email": "client3@culdampolla.com"
     }
   ],
-  "employees": [
+  "Employees": [
     {
       "_id": "E001",
       "name": "Marta Puig",
       "email": "mpuig@culdampolla.com"
+    }
+  ],
+  "Sales": [
+    {
+      "_id": "V001",
+      "glassesId": "G001",
+      "clientId": "C001",
+      "employeeId": "E001",
+      "saleDate": "2025-10-28T12:30:00Z"
+    },
+    {
+      "_id": "V002",
+      "glassesId": "G001",
+      "clientId": "C002",
+      "employeeId": "E001",
+      "saleDate": "2025-10-29T15:45:00Z"
+    },
+    {
+      "_id": "V003",
+      "glassesId": "G001",
+      "clientId": "C003",
+      "employeeId": "E001",
+      "saleDate": "2025-10-30T10:00:00Z"
     }
   ]
 }

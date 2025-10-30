@@ -1,5 +1,5 @@
 {
-  "users": [
+  "Users": [
     {
       "_id": "U001",
       "email": "user1@example.com",
@@ -21,7 +21,7 @@
       "postalCode": "08002"
     }
   ],
-  "channels": [
+  "Channels": [
     {
       "_id": "CH001",
       "userId": "U001",
@@ -30,7 +30,7 @@
       "createdAt": "2025-01-15T10:00:00Z"
     }
   ],
-  "videos": [
+  "Videos": [
     {
       "_id": "V001",
       "title": "Com funciona un motor elèctric",
@@ -43,37 +43,45 @@
       "likes": 532,
       "dislikes": 2,
       "status": "públic",
-      "tags": ["tecnologia", "educació", "enginyeria"],
       "publishedBy": "U001",
       "publishedAt": "2025-10-20T14:30:00Z"
     }
   ],
-  "subscriptions": [
+  "Tags": [
+    { "videoId": "V001", "tag": "tecnologia" },
+    { "videoId": "V001", "tag": "educació" },
+    { "videoId": "V001", "tag": "enginyeria" }
+  ],
+  "Subscriptions": [
     {
+      "_id": "SUB001",
       "subscriberId": "U002",
       "channelId": "CH001",
       "subscribedAt": "2025-10-21T09:00:00Z"
     }
   ],
-  "videoReactions": [
+  "VideoReactions": [
     {
+      "_id": "VR001",
       "videoId": "V001",
       "userId": "U002",
       "type": "like",
       "reactedAt": "2025-10-21T10:00:00Z"
     }
   ],
-  "playlists": [
+  "Playlists": [
     {
       "_id": "PL001",
       "userId": "U002",
       "name": "Favorits de tecnologia",
       "createdAt": "2025-10-22T11:00:00Z",
-      "status": "privada",
-      "videos": ["V001"]
+      "status": "privada"
     }
   ],
-  "comments": [
+  "PlaylistItems": [
+    { "playlistId": "PL001", "videoId": "V001" }
+  ],
+  "Comments": [
     {
       "_id": "C001",
       "videoId": "V001",

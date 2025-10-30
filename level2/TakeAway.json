@@ -1,5 +1,5 @@
-{
-  "clients": [
+{{
+  "Clients": [
     {
       "_id": "CL001",
       "name": "Joan",
@@ -11,7 +11,7 @@
       "phone": "612345678"
     }
   ],
-  "stores": [
+  "Stores": [
     {
       "_id": "ST001",
       "address": "Avinguda del Gust, 45",
@@ -20,7 +20,7 @@
       "province": "Barcelona"
     }
   ],
-  "employees": [
+  "Employees": [
     {
       "_id": "EMP001",
       "name": "Laura",
@@ -40,7 +40,7 @@
       "storeId": "ST001"
     }
   ],
-  "products": [
+  "Products": [
     {
       "_id": "PR001",
       "name": "Pizza Margherita",
@@ -54,34 +54,40 @@
       "name": "Hamburguesa de formatge",
       "description": "Hamburguesa amb formatge cheddar",
       "image": "cheeseburger.jpg",
-      "price": 6.00
+      "price": 6.00,
+      "category": null
     },
     {
       "_id": "PR003",
       "name": "Coca-Cola",
       "description": "Beguda refrescant",
       "image": "coke.jpg",
-      "price": 2.50
+      "price": 2.50,
+      "category": null
     }
   ],
-  "orders": [
+  "Orders": [
     {
       "_id": "ORD001",
       "clientId": "CL001",
       "storeId": "ST001",
       "orderDate": "2025-10-28T13:00:00Z",
       "deliveryType": "domicili",
-      "products": [
-        { "productId": "PR001", "quantity": 1 },
-        { "productId": "PR002", "quantity": 2 },
-        { "productId": "PR003", "quantity": 2 }
-      ],
       "totalPrice": 22.00,
-      "notes": "No tenim ascensor!",
-      "delivery": {
-        "deliveryPersonId": "EMP002",
-        "deliveryDate": "2025-10-28T13:45:00Z"
-      }
+      "notes": "No tenim ascensor!"
+    }
+  ],
+  "OrderItems": [
+    { "orderId": "ORD001", "productId": "PR001", "quantity": 1 },
+    { "orderId": "ORD001", "productId": "PR002", "quantity": 2 },
+    { "orderId": "ORD001", "productId": "PR003", "quantity": 2 }
+  ],
+  "Deliveries": [
+    {
+      "_id": "DEL001",
+      "orderId": "ORD001",
+      "deliveryPersonId": "EMP002",
+      "deliveryDate": "2025-10-28T13:45:00Z"
     }
   ]
 }
