@@ -1,63 +1,54 @@
 {
-  "Suppliers": [
+  "_id": "1369PA",
+  "name": "Carlos de cozar",
+  "address": "Passeig garbi",
+  "phone": "+34 600123456",
+  "email": "Carlos.puig@example.com",
+  "registration_dte": "2023-09-15T10:00:00Z",
+  "sales": [
     {
-      "_id": "supplier1",
-      "name": "ÒpticaCulDampolla",
-      "address": {
-        "street": "Carrer de les ulleres",
-        "number": "12",
-        "floor": "1",
-        "door": "B",
-        "city": "Barcelona",
-        "postal_code": "08001",
-        "country": "Spain"
+      "id": "0936PA",
+      "employe": {
+        "id": "9999PU",
+        "name": " Bernardo"
       },
-      "phone": "+34 932 123 456",
-      "fax": "+34 932 654 321",
-      "nif": "B12345678"
-    }
-  ],
-  "Glasses": [
-    {
-      "_id": "glasses1",
-      "brand": "Ray-Ban",
-      "left_graduation": 2.3,
-      "right_graduation": 2.0,
-      "frame_type": "metallic",
-      "frame_color": "silver",
-      "left_lens_color": "blue",
-      "right_lens_color": "blue",
-      "price": 127.00,
-      "supplier_id": "supplier1"
-    }
-  ],
-  "Customers": [
-    {
-      "_id": "customer1",
-      "name": "Laura Puig",
-      "address": "Right Street, 123",
-      "phone": "+34 600 123 456",
-      "email": "laura.puig@example.com",
-      "registration_date": "2023-09-23",
-      "referred_by": null
-    }
-  ],
-  "Employees": [
-    {
-      "_id": "employee1",
-      "name": "Carlos Cozar",
-      "email": "carlos.Cozar@culdampolla.com",
-      "position": "Sales Assistant"
-    }
-  ],
-  "Sales": [
-    {
-      "_id": "sale1",
-      "date": "2025-10-30T10:52:00Z",
-      "customer_id": "customer1",
-      "glasses_id": "glasses1",
-      "employee_id": "employee1",
-      "quantity": 1
+      "glases": {
+        "id": " 02222GA",
+        "brand": "RAYBAN",
+        "frame": {
+          "color": " red",
+          "type": " metal"
+        },
+        "lens": {
+          "color": [
+            "mate",
+            "opacity"
+          ],
+          "graduation": {
+            "left": 5.50,
+            "right": 120
+          }
+        },
+        "price": 1000,
+        "providers": {
+          "_id":"provider_id_001",
+          "name": "Òptiques Global",
+          "address": {
+            "street": "Av. Diagonal",
+            "number": "100",
+            "floor": "1",
+            "door": "A",
+            "city": "Barcelona",
+            "postal_code": "08019",
+            "country": "España"
+          },
+          "phone": "+34 931234567",
+          "fax": "+34 931234568",
+          "nif": "B12345678"
+        },
+        "quantity":1,
+        "saledate": "2050-11-20"
+      }
     }
   ]
 }
